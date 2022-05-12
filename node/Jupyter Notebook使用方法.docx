@@ -1,0 +1,14 @@
+## 创建conda虚拟环境
+conda create -n conda_name python = 3.x
+
+## 激活虚拟环境
+conda activate your_environment
+
+## 务必在当前虚拟环境中安装ipykernel
+pip install ipykernel
+
+## 生成kernel
+python -m ipykernel install --user --name your_environment
+
+## 启动jupyter notebook
+jupyter notebook
